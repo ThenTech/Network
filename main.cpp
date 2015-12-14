@@ -14,7 +14,8 @@ int main() {
 	n.addDevice("HUB", DeviceType::HUB);
 	n.addDevice("Server", DeviceType::SERVER);
 
-
+	for (NetwerkApparaat *o : n.getDeviceList())
+		cout << "Network device: " << o->getName() << endl;
 
 	return 0;
 }

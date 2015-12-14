@@ -19,7 +19,7 @@ namespace Network {
 			vector<NetwerkApparaat*> _net;
 
 		public:
-			Topology();
+			Topology() {}
 
 
 			void addDevice(string name, DeviceType t);

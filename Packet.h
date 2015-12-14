@@ -1,15 +1,19 @@
 #ifndef PACKET_H
 #define PACKET_H
 
+#include <string>
+
+using namespace std;
+
 namespace Network {
 
 	class Packet {
 		private:
-			int _data;
+			string _data;
 		public:
-			Packet(int data) : _data(data) {}
+			Packet(string data) : _data(data) {}
 
-			int getData();
+			string getData();
 	};
 
 }

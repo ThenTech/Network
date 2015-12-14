@@ -13,11 +13,10 @@ namespace Network {
 		public:
 			NetwerkApparaat(string name) : _name(name) {}
 
-			virtual Packet request() = NULL;
+			virtual Packet request() = 0;
 
-			virtual Packet reply() = NULL;
+			virtual Packet reply() = 0;
 
-		protected:
 			string getName() {
 				return _name;
 			}

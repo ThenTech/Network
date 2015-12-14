@@ -3,6 +3,6 @@
 using namespace Network;
 
 
-int Packet::getData() {
-	return _data;
+string Packet::getData() {
+	return this->_data;
 }
